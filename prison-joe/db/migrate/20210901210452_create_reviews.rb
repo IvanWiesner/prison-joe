@@ -1,10 +1,8 @@
 class CreateReviews < ActiveRecord::Migration[6.1]
   def change
     create_table :reviews do |t|
-      t.string :belongs_to
-      t.string :user
-      t.string :belongs_to
-      t.string :merch
+      t.belongs_to :user, foreign_key: true, null: false
+      t.belongs_to :merch, foreign_key: true, null: false
       t.string :comment
 
       t.timestamps

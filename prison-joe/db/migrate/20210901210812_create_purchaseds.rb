@@ -1,12 +1,10 @@
 class CreatePurchaseds < ActiveRecord::Migration[6.1]
   def change
     create_table :purchaseds do |t|
-      t.string :belongs_to
-      t.string :user_id
-      t.string :belongs_to
-      t.string :merch_id
-      t.string :quantity
-      t.string :integer
+      t.belongs_to :user, foreign_key: true, null: false
+      t.belongs_to :merch, foreign_key: true, null: false
+      t.integer :quantity
+      t.integer :price
 
       t.timestamps
     end
