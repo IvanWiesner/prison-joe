@@ -1,4 +1,4 @@
-class Review < ApplicationRecord
+class Purchase < ApplicationRecord
   belongs_to :user
   belongs_to :merch
 end

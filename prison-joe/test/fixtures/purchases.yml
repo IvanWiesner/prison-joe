@@ -3,9 +3,11 @@
 one:
   user: one
   merch: one
-  comment: MyString
+  quantity: 1
+  price: 1
 
 two:
   user: two
   merch: two
-  comment: MyString
+  quantity: 1
+  price: 1

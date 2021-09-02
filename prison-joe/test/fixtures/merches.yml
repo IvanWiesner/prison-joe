@@ -2,12 +2,10 @@
 
 one:
   name: MyString
-  image: MyString
-  price: MyString
-  integer: MyString
+  image_url: MyString
+  price: 1
 
 two:
   name: MyString
-  image: MyString
-  price: MyString
-  integer: MyString
+  image_url: MyString
+  price: 1
